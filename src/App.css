@@ -1,0 +1,164 @@
+
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh
+}
+body{
+  background-color:black;
+}
+#root{
+/*   position:absolute; */
+  display:grid;
+  grid-template-columns: 100wh;
+  grid-template-rows: 80vh;
+  align-items: center;
+  justify-items: center;
+}
+#myCalculator{
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: #c32c2c;
+    display:grid;
+    place-items: center;
+    grid-template-areas: 
+                      "a a a a"
+                      "b b b b"
+                      "b b b b"
+                      "c c d d"
+                      "c c d d";
+  
+}
+#display_expr{
+   grid-area: a;
+  text-align:right;
+  background-color:black;
+  color:white;
+  margin-top:auto;
+  margin-bottom:auto;
+  height:100%;
+  width:100%;
+  font-family: 'New X Digital tfb', sans-serif;
+ 
+/*   display: inline-block;
+  vertical-align: middle;
+  line-height: normal; */
+}
+#display{
+   grid-area: b;
+  text-align:right;
+   background-color:black;
+  color:yellow;
+  margin-top:auto;
+  margin-bottom:10px;
+  height:100%;
+  width:100%;
+  font-family: 'Digital-7', sans-serif;
+  font-size:50px;
+}
+.Numbers{
+  grid-area:c;
+  display:grid;
+  grid-template-areas: 
+                      "e f g"
+                      "h i k"
+                      "l m n"
+                      "o o p";
+  
+}
+#zero{
+  grid-area:o;
+}
+.Operators{
+  grid-area:d;
+  display:grid;
+  grid-template-areas: 
+                      "q q r r"
+                      "s s t t"
+                      "u u u u"
+                      "v v v v";
+  
+}
+#clear{
+  grid-area:v;
+  background-color:#e23232; !important
+}
+#equals{
+  grid-area:u;
+  background-color:#31c933; !important
+  
+}
+#add{
+  grid-area:q
+}
+#subtract{
+  grid-area:r;
+}
+#multiply{
+  grid-area:s;
+}
+#divide{
+  grid-area:t
+}
+#add , #subtract, #multiply,#divide{
+  
+ background-color: #555855; !important
+  
+}
+
+
+
+/* CSS */
+button {
+  align-items: center;
+  background-color: #06f;
+  border: 2px solid black;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+/*   min-width: 140px; */
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:focus {
+  color: #171e29;
+}
+
+button:hover {
+  border-color: #00e2e6;
+  color: white;
+  fill: #2d7bf0;
+}
+
+button:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+h1{
+
+  color:white;
+  text-align:center;
+ font-family: 'Digital-7', sans-serif;
+  font-size:55px;
+  display:grid;
+}
+span{
+  
+}
